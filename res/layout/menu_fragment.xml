@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/weatherFragRoot"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <GridView
+        android:id="@+id/menuGridView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/weathermate_lv_background"
+        android:gravity="center_horizontal"
+        android:listSelector="@drawable/grid_selector"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:visibility="invisible" >
+    </GridView>
+
+</RelativeLayout>

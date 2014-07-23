@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/side_panel_bg_nostroke"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvflights_airlines"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:shadowColor="#33000000"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="3"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:text="@string/flight_airlines"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
+
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:background="@drawable/sidepanel_divider"
+        android:padding="3dp" >
+    </View>
+
+    <TextView
+        android:id="@+id/tvflights_about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:shadowColor="#33000000"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="3"
+        android:text="@string/flight_info"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
+
+</LinearLayout>

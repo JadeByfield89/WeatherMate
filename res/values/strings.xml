@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WeatherMate</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="instructions1">This is your saved places panel, any location that you save will be automatically added to this list</string>
+    <string name="flight_airlines">"If an airline you're looking for is not listed or returned no results, please do not hesitate to send us an email and we'll try to see if it's possible to get flight data from the requested airline."</string>
+    <string name="flight_info"><b>WeatherMate</b> uses online webservices to lookup your flight data. Touch the magnifying glass to begin a new search. \n \n *<i> Please Note: <b>WeatherMate</b> is not responsible for missing flight data, we pull this data from an online service and are not the aggregators of this data. </i></string>
+    
+    
+    
+    <string-array name="textColors">
+        <item>Yellow</item>
+        <item>Blue</item>
+        <item>White</item>
+        <item>Red</item>
+    </string-array>
+
+    <string-array name="textColor_values">
+        <item>yellow</item>
+        <item>blue</item>
+          <item>white</item>
+            <item>red</item>
+    </string-array>
+    
+    
+     <string-array name="flight_results">
+        <item>5</item>
+        <item>10</item>
+          <item>Display All Results</item>
+            
+    </string-array>
+
+</resources>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/mainFragRoot"
+    android:background="@drawable/weathermate_wp1"
+    android:orientation="vertical" >
+
+
+    
+
+    
+
+   <RelativeLayout android:id="@+id/lvWrapper" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_width="fill_parent">
+   <eu.erikw.PullToRefreshListView
+        android:id="@+id/cityList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        
+        android:layout_centerHorizontal="true"
+        android:divider="@drawable/layout_color"
+        android:dividerHeight="10dp"
+        android:scrollbars="none"
+        android:clickable="false"
+        android:listSelector="@android:color/transparent"
+        android:cacheColorHint="#00000000"
+        android:smoothScrollbar="true"
+        >
+    </eu.erikw.PullToRefreshListView>
+    
+   
+ 
+    
+   
+    
+    </RelativeLayout>
+    
+     <ProgressBar
+       android:id="@+id/progressBar1"
+       style="?android:attr/progressBarStyleLarge"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_centerInParent="true"
+       android:layout_centerVertical="true"
+       android:visibility="gone"
+       
+        />
+
+   
+
+</RelativeLayout>

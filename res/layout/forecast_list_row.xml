@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/forecast_listitem_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvforecastDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvforecastDayofWeek"
+        android:layout_centerHorizontal="true"
+        android:shadowColor="#33000000"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="2"
+        android:text="date"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvforecastDayofWeek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:shadowColor="#33000000"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="3"
+        android:text="Day"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" >
+    </TextView>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tvforecastDay"
+        android:background="@drawable/list_divider_gradient" />
+
+    <TextView
+        android:id="@+id/tvforecastTempMaxC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvforecastTempMinF"
+        android:layout_alignParentRight="true"
+         android:layout_marginRight="5dp"
+        android:text="MaxC"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvforecastTempMinC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvforecastTempMinF"
+        android:layout_alignBottom="@+id/tvforecastTempMinF"
+        android:layout_alignParentRight="true"
+        android:text="MinC"
+        android:layout_marginRight="5dp"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvforecastTempMaxF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/ivforecastWeatherIcon"
+        android:text="MaxF"
+        android:layout_marginLeft="5dp"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvforecastTempMinF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/tvforecastTempMaxF"
+        android:layout_below="@+id/tvforecastTempMaxF"
+        android:layout_marginLeft="5dp"
+        android:text="MinF"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/ivforecastWeatherIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/weather_icon_na" />
+
+    <TextView
+        android:id="@+id/tvforecastDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ivforecastWeatherIcon"
+         android:layout_marginLeft="7dp"
+        android:text="Description:"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+</RelativeLayout>

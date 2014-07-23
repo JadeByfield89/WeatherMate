@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/FlightsTabHost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/weathermate_wp1"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#00000000" >
+
+            <LinearLayout
+                android:id="@+id/FlightsMainLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+
+                <com.brightr.weathermate.views.PullToRefreshListView
+                    android:id="@+id/FlightsList"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:cacheColorHint="#00000000"
+                    android:listSelector="@drawable/grid_selector"
+                    android:scrollbars="none" >
+                </com.brightr.weathermate.views.PullToRefreshListView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/FlightsDetailLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <include
+                    android:id="@+id/detailsLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    layout="@layout/flight_details_layout" >
+                </include>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/FlightsSavedLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <com.brightr.weathermate.views.PullToRefreshListView
+                    android:id="@+id/FlightsSavedList"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:cacheColorHint="#00000000"
+                    android:divider="#00000000"
+                    android:dividerHeight="10dp"
+                    android:listSelector="@drawable/grid_selector"
+                    android:scrollbars="none" >
+                </com.brightr.weathermate.views.PullToRefreshListView>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</TabHost>

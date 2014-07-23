@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.brightr.weathermate"
+    android:versionCode="8"
+    android:versionName="1.0.6" >
+    
+    <supports-screens android:smallScreens="true"
+                      android:normalScreens="true"
+                      android:largeScreens="true"/>
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="16" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:configChanges="orientation|keyboardHidden|screenSize"
+        android:icon="@drawable/weathermate_icon"
+        android:label="@string/app_name"
+        
+        android:theme="@style/Theme.Sherlock">
+        <uses-library android:name="com.google.android.maps" />
+       
+
+        <activity
+            android:name="com.brightr.weathermate.activities.MainActivity"
+            android:label="@string/app_name" 
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.brightr.weathermate.activities.SearchLocationsActivity" android:screenOrientation="portrait">
+           
+        </activity>
+        <activity android:name="com.brightr.weathermate.activities.MyFlightsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.brightr.weathermate.activities.LocationMapview" android:screenOrientation="portrait" ></activity>
+        <activity android:name="com.brightr.weathermate.activities.NewsViewerActivity" android:screenOrientation="portrait" ></activity>
+        <activity android:name="com.brightr.weathermate.activities.WebsiteViewActivity" android:screenOrientation="portrait" ></activity>
+        <activity android:name="com.brightr.weathermate.activities.SocialMediaActivity" android:screenOrientation="portrait" ></activity>
+        <activity android:name="com.brightr.weathermate.activities.SettingsActivity" android:screenOrientation="portrait"  ></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_showTraffic"
+        android:orderInCategory="1"
+        android:showAsAction="always"
+        android:icon="@drawable/actionbar_warning"
+        android:title="traffic"
+        />
+    
+    
+      <item
+        android:id="@+id/menu_showSatellite"
+        android:orderInCategory="0"
+        android:showAsAction="always"
+        android:icon="@drawable/satellite"
+        android:title="traffic"
+        />
+  
+         
+        </menu>

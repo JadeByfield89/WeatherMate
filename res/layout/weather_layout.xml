@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/weathermate_wp1"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/vToday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/city_list_row" >
+    </include>
+
+    <LinearLayout
+        android:id="@+id/wrapper1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/vToday"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:weightSum="12" >
+
+        <include
+            android:id="@+id/vPanel1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="3"
+            layout="@layout/forecast_day_panel" />
+
+        <include
+            android:id="@+id/vPanel2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="3"
+            layout="@layout/forecast_day_panel" />
+
+        <include
+            android:id="@+id/vPanel3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="3"
+            layout="@layout/forecast_day_panel" />
+
+        <include
+            android:id="@+id/vPanel4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="3"
+            layout="@layout/forecast_day_panel" />
+    </LinearLayout>
+
+</RelativeLayout>

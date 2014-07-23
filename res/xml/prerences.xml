@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <com.brightr.weathermate.views.CustomPreferenceCategory
+        android:key="Weather"
+        android:title="Weather" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="degreesC"
+            android:summary="Display the weather degrees in Celsius units"
+            android:title="Show degrees Celsius" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="degreesF"
+            android:summary="Display the weather in Farenheit units"
+            android:title="Show degrees Fahrenheit" />
+
+        <ListPreference
+            android:entries="@array/textColors"
+            android:entryValues="@array/textColor_values"
+            android:key="colorPref"
+            android:summary="Change the color of the temerature text"
+            android:title="Temperature Text Color" />
+    </com.brightr.weathermate.views.CustomPreferenceCategory>
+    <com.brightr.weathermate.views.CustomPreferenceCategory android:title="Flights" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="exactFlights"
+            android:summary="Do not show similar or related flights, must match flight number exactly"
+            android:title="Exact flight matches only" />
+
+        <ListPreference
+            android:entries="@array/flight_results"
+            android:entryValues="@array/flight_results"
+            android:summary="Maximum number of flights to return after each search"
+            android:title="Maximum Flight Results" />
+    </com.brightr.weathermate.views.CustomPreferenceCategory>
+    <com.brightr.weathermate.views.CustomPreferenceCategory android:title="News" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="launchBrowser"
+            android:summary="Use the default browser app to view web pages"
+            android:title="Use external Browser" />
+    </com.brightr.weathermate.views.CustomPreferenceCategory>
+    <com.brightr.weathermate.views.CustomPreferenceCategory android:title="Miscellaneous" >
+        <com.brightr.weathermate.views.CustomDialogPreference
+            android:dialogMessage="If you have any questions, comments, concerns or requests please do not hesitate to send us some feedback! "
+            android:negativeButtonText="Cancel"
+            android:positiveButtonText="Send Feedback"
+            android:summary="Questions, comments, requests all welcomed"
+            android:key="dialogPref"
+            android:title="Send Feedback" >
+        </com.brightr.weathermate.views.CustomDialogPreference>
+    </com.brightr.weathermate.views.CustomPreferenceCategory>
+
+</PreferenceScreen>

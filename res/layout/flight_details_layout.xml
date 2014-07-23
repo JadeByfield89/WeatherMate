@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/news_panel_bg_rounded" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/firstRL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <include
+                android:id="@+id/flightsHeader1"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                layout="@layout/flightlist_row_header" >
+            </include>
+
+            <TextView
+
+                android:id="@+id/tvFlightOriginAirport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/flightsHeader1"
+                android:layout_marginLeft="3dp"
+                android:padding="2dp"
+                android:text="OriginAirport"
+                android:textColor="@drawable/text_color_yellow"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvFlightDepartureTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvFlightOriginAirport"
+                android:layout_marginLeft="3dp"
+                android:padding="2dp"
+                android:text="Date/Time"
+                android:textColor="@drawable/text_color_yellow"
+                android:textSize="14sp"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvFlightAircraftType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvFlightDepartureTime"
+                android:layout_marginLeft="3dp"
+                android:padding="2dp"
+                android:text="AircraftType:"
+                android:textColor="@drawable/text_color_yellow"
+                android:textSize="14sp"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvFlightTerminal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvFlightAircraftType"
+                android:layout_marginLeft="3dp"
+                android:padding="2dp"
+                android:text="Terminal:"
+                android:textColor="@drawable/text_color_yellow"
+                android:textSize="14sp"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvFlightGate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvFlightTerminal"
+                android:layout_marginLeft="3dp"
+                android:padding="2dp"
+                android:text="Gate:"
+                android:textColor="@drawable/text_color_yellow"
+                android:textSize="14sp"
+                android:textStyle="bold" >
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/secondRL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/firstRL" >
+
+            <include
+                android:id="@+id/flightHeader2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                layout="@layout/flightlist_row_header_nonrounded" >
+            </include>
+
+            <TextView
+                android:id="@+id/tvFlightDestinationAirport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/flightHeader2"
+                android:layout_marginLeft="3dp"
+                android:padding="2dp"
+                android:text="DestinationAirport"
+                android:textColor="@drawable/text_color_yellow"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvFlightArrivalTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvFlightDestinationAirport"
+                android:layout_marginLeft="3dp"
+                android:padding="2dp"
+                android:text="Date/Time"
+                android:textColor="@drawable/text_color_yellow"
+                android:textSize="14sp"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvFlightArrivalTerminal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvFlightArrivalTime"
+                android:layout_marginLeft="3dp"
+                android:padding="2dp"
+                android:text="Terminal:"
+                android:textColor="@drawable/text_color_yellow"
+                android:textSize="14sp"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvFlightArrivalGate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvFlightArrivalTerminal"
+                android:layout_marginLeft="3dp"
+                android:padding="2dp"
+                android:text="Gate:"
+                android:textColor="@drawable/text_color_yellow"
+                android:textSize="14sp"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvFlightBaggageClaim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvFlightArrivalGate"
+                android:layout_marginLeft="3dp"
+                android:padding="2dp"
+                android:text="Baggage Claim:"
+                android:textColor="@drawable/text_color_yellow"
+                android:textSize="14sp"
+                android:textStyle="bold" >
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlFinal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/secondRL" >
+
+            <include
+                android:id="@+id/flightHeader3"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                layout="@layout/flightlist_row_header_nonrounded" >
+            </include>
+
+            <TextView
+                android:id="@+id/tvFlightSpeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/flightHeader3"
+                android:layout_marginLeft="3dp"
+                android:padding="2dp"
+                android:text="Plane Speed:"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvFlightAltitude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvFlightSpeed"
+                android:layout_marginLeft="3dp"
+                android:padding="2dp"
+                android:text="Plane Altitude:"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" >
+            </TextView>
+
+            <Button
+                android:id="@+id/bFlightsSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvFlightAltitude"
+                android:layout_centerHorizontal="true"
+                android:text="Save Flight" >
+            </Button>
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/NewsFooter"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/rlFinal"
+            android:layout_alignParentBottom="true"
+            layout="@layout/layout_panel_footer" />
+    </RelativeLayout>
+
+</ScrollView>

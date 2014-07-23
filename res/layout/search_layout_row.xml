@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/forecast_listitem_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/SearchHeaderLayout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        layout="@layout/flightlist_row_header" >
+    </include>
+
+    <ImageView
+        android:id="@+id/ivSearchLocationIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/SearchHeaderLayout"
+        android:background="@drawable/map_icon" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/tvSearchLocationName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SearchHeaderLayout"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@+id/ivSearchLocationIcon"
+        android:text="Location"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvSearchLocationLatitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSearchLocationCountry"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@+id/ivSearchLocationIcon"
+        android:text="Latitude: "
+        android:textColor="@android:color/white" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvSearchLocationLongitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSearchLocationLatitude"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@+id/ivSearchLocationIcon"
+        android:text="Longitude: "
+        android:textColor="@android:color/white" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvSearchLocationCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSearchLocationName"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@+id/ivSearchLocationIcon"
+        android:text="Country: "
+        android:textColor="@android:color/white" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvSearchLocationRegion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSearchLocationLongitude"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@+id/ivSearchLocationIcon"
+        android:text="Region: "
+        android:textColor="@android:color/white" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvSearchLocationPopulation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSearchLocationRegion"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@+id/ivSearchLocationIcon"
+        android:text="Population: "
+        android:textColor="@android:color/white" >
+    </TextView>
+
+    <ImageView
+        android:id="@+id/ivFlightsNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tvSearchLocationCountry"
+        android:src="@drawable/flights_next" >
+    </ImageView>
+
+</RelativeLayout>

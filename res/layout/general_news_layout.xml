@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pageOne"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/news_panel_bg_rounded" >
+
+        <include
+            android:id="@+id/NewsHeader"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            layout="@layout/flightlist_row_header" />
+        
+        
+
+        <GridView
+            android:id="@+id/gvGeneralNews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/NewsHeader"
+            android:layout_above="@+id/NewsFooter"
+            android:listSelector="@drawable/grid_selector"
+            android:numColumns="3"
+            android:gravity="center_horizontal"
+            android:stretchMode="columnWidth" >
+        </GridView>
+        
+       
+
+        <include
+            android:id="@+id/NewsFooter"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            layout="@layout/layout_panel_footer" />
+    </RelativeLayout>
+
+</RelativeLayout>

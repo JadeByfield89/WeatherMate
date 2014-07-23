@@ -1,0 +1,18 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res/com.brightr.weathermate"
+    android:id="@+id/weathermateFragContainer"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <com.deaux.fan.FanView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res/com.brightr.weathermate"
+        android:id="@+id/fan_view"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:background="@drawable/side_panel_bg"
+        android:orientation="vertical"
+        app:menuSize="250dp" />
+
+</RelativeLayout>

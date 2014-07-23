@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/forecast_listitem_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/flightsHeaderLayout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        layout="@layout/flightlist_row_header" >
+    </include>
+
+    <ImageView
+        android:id="@+id/ivAirlineIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/flightsHeaderLayout"
+        android:padding="2dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="3dp"
+        android:background="@drawable/imageview_border"
+        android:src="@drawable/ic_contact_picture_2" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/tvFlightNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ivAirlineIcon"
+        android:layout_below="@+id/flightsHeaderLayout"
+        android:layout_toRightOf="@+id/ivAirlineIcon"
+       
+        android:layout_marginLeft="5dp"
+        android:text="Flight Number"
+        android:textColor="@android:color/white" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvFlightAirport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvFlightNumber"
+        android:layout_below="@+id/tvFlightNumber"
+        android:padding="2dp"
+        
+        android:text="Airport Name"
+        android:textColor="@android:color/white" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvFlightDepartureTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ivAirlineIcon"
+        android:padding="2dp"
+         android:layout_marginLeft="2dp"
+        android:text="Departure Time"
+        android:textColor="@drawable/text_color_yellow" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvFlightArrivalTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvFlightDepartureTime"
+        android:layout_below="@+id/tvFlightDepartureTime"
+        android:padding="2dp"
+       
+        android:text="Arrival Time"
+        android:textColor="@drawable/text_color_yellow" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvFlightOriginCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvFlightArrivalTime"
+        android:layout_below="@+id/tvFlightArrivalTime"
+        android:padding="2dp"
+        
+        android:text="Origin City: "
+        android:textColor="@android:color/white" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvFlightDestinationCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvFlightOriginCity"
+        android:layout_below="@+id/tvFlightOriginCity"
+        android:padding="2dp"
+        
+        android:text="Destination City: "
+        android:textColor="@android:color/white" >
+    </TextView>
+
+    <ImageView
+        android:id="@+id/ivFlightsNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tvFlightDepartureTime"
+        android:src="@drawable/flights_next" >
+    </ImageView>
+
+</RelativeLayout>

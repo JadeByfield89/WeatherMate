@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/weathermate_wp1"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+         android:layout_marginTop="5dp"
+        android:background="@drawable/news_panel_bg_rounded" >
+
+        <include
+            android:id="@+id/SocialHeader"
+            android:layout_width="match_parent"
+            
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            layout="@layout/flightlist_row_header" />
+
+        <com.brightr.weathermate.views.PullToRefreshListView
+            android:id="@+id/SocialList"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/SocialFooter"
+            android:layout_below="@+id/SocialHeader"
+            android:cacheColorHint="#00000000"
+            android:clickable="false"
+            android:divider="@drawable/layout_color"
+            android:dividerHeight="10dp"
+            android:listSelector="@drawable/grid_selector"
+            android:scrollbars="none"
+            android:smoothScrollbar="true" >
+        </com.brightr.weathermate.views.PullToRefreshListView>
+
+        <include
+            android:id="@+id/SocialFooter"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            layout="@layout/layout_panel_footer" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/saved_row_bg"
+    android:orientation="vertical" >
+    
+    
+       <include
+        android:id="@+id/savedFlightsHeader"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_alignParentTop="true"
+        layout="@layout/saved_flights_header_rounded" >
+    </include>
+
+    <TextView
+        android:id="@+id/tvSavedFromTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="7dp"
+        android:text="From/To"
+        android:layout_below="@+id/savedFlightsHeader"
+        android:textColor="@android:color/white" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvSavedFlightNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSavedFromTo"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="7dp"
+        android:text="FlightNumber"
+        android:textColor="@android:color/white" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvSavedLeaves"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSavedFlightNumber"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="7dp"
+        android:text="Leaves"
+        android:textColor="@drawable/text_color_yellow" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvSavedArrives"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSavedLeaves"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="7dp"
+        android:text="Arrives"
+        android:textColor="@drawable/text_color_yellow" >
+    </TextView>
+
+    <CheckBox
+        android:id="@+id/savedFlightCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:clickable="false"
+        android:visibility="gone" />
+
+</RelativeLayout>

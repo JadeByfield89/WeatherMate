@@ -1,0 +1,56 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_refresh"
+        android:orderInCategory="0"
+        android:showAsAction="always"
+        android:title="Places"/>
+    <item
+        android:id="@+id/menu_map"
+        android:icon="@drawable/action_bar_mylocation"
+        android:orderInCategory="0"
+        android:showAsAction="always"/>
+    <item
+        android:id="@+id/menu_search"
+        android:icon="@drawable/actionbar_search"
+        android:orderInCategory="0"
+        android:showAsAction="always"/>
+    <item
+        android:id="@+id/menu_more"
+        android:icon="@drawable/abs__ic_menu_moreoverflow_holo_dark"
+        android:orderInCategory="1"
+        android:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/menu_flights"
+                android:title="My Flights">
+            </item>
+            <item
+                android:id="@+id/menu_traffic"
+                android:title="Traffic">
+            </item>
+            <item
+                android:id="@+id/menu_news"
+                android:title="News">
+            </item>
+            <item
+                android:id="@+id/menu_social"
+                android:title="Social">
+            </item>
+            <item
+                android:id="@+id/menu_about"
+                android:title="About">
+            </item>
+            <item
+                android:id="@+id/menu_settings"
+                android:title="Settings">
+            </item>
+            
+            <item
+                android:id="@+id/menu_addLocation"
+                android:title="Save Location">
+            </item>
+        </menu>
+    </item>
+
+</menu>
